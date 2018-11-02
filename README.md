@@ -9,25 +9,26 @@ Try it for free at http://thingping.net
 
 ## Usage
 
-1. Create the client
+**Create the client.**
 
     ThingPing client = ThingPing.clientBuilder()
-			              .withAccount("ACCOUNT1")         // your accountId  
-			              .withThingId("THING1")           // thing thingId
-			              .withInterval("daily")           // "daily", "hourly" or ISO Duration: "PT3H"
-			              .withNotify("rgs@example.local") // your email
-			              .build();
+				.withAccount("ACCOUNT1")         // your accountId  
+				.withThingId("THING1")           // thing thingId
+				.withInterval("daily")           // "daily", "hourly" or ISO Duration: "PT3H"
+				.withNotify("rgs@example.local") // your email
+				.build();
 
-2. send a notification whenever you need to
+**Send a notification whenever you need to.**
 
     try
     {
         client.ping(true);
     }
-    catch(ThingPingException tpe) {
+    catch(ThingPingException tpe) 
+    {
         log.warn("ThingPing notify error: {}", tpe.getMessage(), tpe);
     }
-    
-2b. if you don't care about exceptions, you can call `ping()` which swallows all exceptions. 
+
+*If you don't care about exceptions, you can call `ping()` which swallows all exceptions.*
 
     client.ping()
