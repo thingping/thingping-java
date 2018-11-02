@@ -7,6 +7,8 @@ It's easy to setup and can be used to help check that everything you build conti
 
 Try it for free at http://thingping.net
 
+[ ![Download](https://api.bintray.com/packages/thingping/thingping-client-java/thingping-java/images/download.svg) ](https://bintray.com/thingping/thingping-client-java/thingping-java/_latestVersion)
+
 ## Usage
 
 **Create the client.**
